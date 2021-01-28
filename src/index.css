@@ -72,7 +72,7 @@ code {
   }
 }
 
-@media(max-width: 900px) {
+/* @media(max-width: 900px) {
 
   .loading-screen {
     display: none;
@@ -82,4 +82,4 @@ code {
     display: none;
   }
 
-}
+} */
