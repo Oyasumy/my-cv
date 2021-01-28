@@ -1,38 +1,312 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;800&display=swap");
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #D8DBE2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-body {
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home-body .list-contact {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  bottom: 250px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 400px;
+  left: -9em;
+}
+
+@media (max-width: 510px) {
+  .home-body .list-contact {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 2em;
+    left: 0px;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-body .list-contact ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+@media (max-width: 510px) {
+  .home-body .list-contact ul {
+    padding-left: 0px;
+  }
+}
+
+.home-body .language-option {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 510px) {
+  .home-body .language-option {
+    margin-top: -.5em;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 510px) {
+  .home-body .language-option .svg-line {
+    margin-right: -5em;
   }
 }
+
+.home-body .language-option p {
+  margin-right: 1em;
+}
+
+.home-body .menu {
+  position: absolute;
+  right: 0px;
+  top: 41%;
+}
+
+@media (max-width: 510px) {
+  .home-body .menu .svg-line svg {
+    height: 100px;
+    width: 60px;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .menu .svg-line svg {
+    height: 120px;
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1174px) {
+  .home-body .menu .svg-line svg {
+    height: 150px;
+    width: 80px;
+  }
+}
+
+.home-body .title-home {
+  position: absolute;
+  top: 5%;
+  left: 7em;
+}
+
+@media (max-width: 510px) {
+  .home-body .title-home {
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0%;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .title-home {
+    top: -13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1174px) {
+  .home-body .title-home {
+    left: 5%;
+  }
+}
+
+@media (max-width: 510px) {
+  .home-body .title-home svg {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    height: 300px;
+    left: 0px;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .title-home svg {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    height: 450px;
+  }
+}
+
+.home-body .detail-main {
+  position: absolute;
+  left: 6em;
+  top: 22em;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@media (max-width: 510px) {
+  .home-body .detail-main {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 50%;
+    left: 3em;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .detail-main {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 20%;
+    top: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1174px) {
+  .home-body .detail-main {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 35%;
+    top: 80%;
+  }
+}
+
+.home-body .detail-main h3.detail {
+  text-transform: uppercase;
+  line-height: 1px;
+}
+
+@media (max-width: 510px) {
+  .home-body .detail-main p {
+    margin-right: 2.5em;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .detail-main p {
+    margin-right: 7em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1174px) {
+  .home-body .detail-main p {
+    margin-right: 8em;
+  }
+}
+
+.home-body .picture {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+@media (min-width: 768px) and (max-width: 1174px) {
+  .home-body .picture {
+    right: 11%;
+    top: 21%;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .picture {
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 100px;
+  }
+}
+
+@media (max-width: 510px) {
+  .home-body .picture svg {
+    height: 300px;
+    width: 300px;
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .home-body .picture svg {
+    height: 350px;
+    width: 350px;
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1174px) {
+  .home-body .picture svg {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+.home-body .my-name {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+@media (max-width: 510px) {
+  .home-body .my-name {
+    bottom: 0%;
+  }
+}
+
+.home-body .my-name .group-name {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.home-body .my-name .group-name h4 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.home-body .my-name .name {
+  margin-top: 3px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-right: 6px;
+}
+/*# sourceMappingURL=main.css.map */
