@@ -1,0 +1,1 @@
+export const SET_FIRST_LOAD = 'SET_FIRST_LOAD'

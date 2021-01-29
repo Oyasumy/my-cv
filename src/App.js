@@ -1,9 +1,11 @@
-import "./App.css";
+// import "./App.css";
 import gsap from "gsap";
 import { TweenMax, Expo, Power4 } from "gsap";
 import { useCallback, useEffect } from "react";
-import Home from "./components/home";
+import Home from "./components/Home/home";
 import Loading from "./components/loading";
+import Menu from "./components/menu";
+import Navigation from "./components/Navigation/navigation";
 
 function App() {
 
@@ -22,7 +24,9 @@ function App() {
       <div className="overlay second"></div>
       <div className="overlay third"></div> */}
       <Loading/>
+      <Menu/>
       <Home/>
+      <Navigation/>
     </div>
   );
 }
