@@ -1,4 +1,4 @@
-import { Power4, TweenMax } from "gsap";
+import { Back, Power4, TweenMax } from "gsap";
 import React from "react";
 
 const Menu = () => {
@@ -46,14 +46,12 @@ const Menu = () => {
       y:"1em",
       ease: Power4.easeInOut
     });
-
-    
-
+   
   };
   return (
     <>
       {/* <!-- menu option --> */}
-      <div className="menu" onClick={() => openNavigation()} style={{zIndex: 1}}>
+      <div className="menu" onClick={() => openNavigation()} style={{zIndex: 20}}>
         <div className="svg-line">
           <svg width="92" height="146" viewBox="0 0 92 146" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 10C0 4.47715 4.47715 0 10 0H92V146H10C4.47715 146 0 141.523 0 136V10Z" fill="black" />

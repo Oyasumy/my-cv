@@ -1,13 +1,64 @@
-import { Power4, TweenMax } from "gsap";
+import { Back, Power4, TweenMax } from "gsap";
 import React, { useCallback, useEffect } from "react";
+import { Link, Route } from "react-router-dom";
 import "./style.css";
 
 const Navigation = () => {
-  const initAnimated = useCallback(() => {}, []);
+  const menu = [
+    {
+      to: "/my-cv",
+      label: "profile",
+      exact: true,
+    },
+    {
+      to: "/skill",
+      label: "skill",
+      exact: false,
+    },
+    {
+      to: "/education",
+      label: "education",
+      exact: false,
+    },
+    {
+      to: "/interest",
+      label: "interest",
+      exact: false,
+    },
+  ];
 
-  useEffect(() => {
-    initAnimated();
-  }, []);
+  const MenuLink = ({ label, to, exactOnlyWhenActive }) => {
+    return (
+      <Route
+        path={to}
+        exact={exactOnlyWhenActive}
+        children={({ match }) => {
+          //   var active = match ? "active" : "";
+          return (
+            <li
+              as={Link}
+              to={to}
+              link={true}
+              // active={activeItem === label}
+              // onClick={handleItemClick}
+            >
+              <Link to={to} style={{ textDecoration: "none", color: "black" }} onClick={() => onCloseNavigation()}>
+                {label}
+              </Link>
+            </li>
+          );
+        }}
+      />
+    );
+  };
+
+  const showNavigation = () => {
+    var result = null;
+    result = menu.map((el, i) => {
+      return <MenuLink label={el.label} to={el.to} exactOnlyWhenActive={el.exact} key={i} />;
+    });
+    return result;
+  };
 
   const onCloseNavigation = () => {
     // console.log("ok");
@@ -17,8 +68,7 @@ const Navigation = () => {
       x: 0,
     });
 
-
-    // Set animation 
+    // Set animation
     TweenMax.to(".background-1", {
       opacity: 1,
       x: "-1em",
@@ -30,6 +80,19 @@ const Navigation = () => {
       x: "1em",
       y: "-1em",
       ease: Power4.easeInOut,
+    });
+    
+    TweenMax.to(".background-1", {
+      delay: 1,
+      x: 0,
+      y: 0,
+      // ease: Power4.easeInOut,
+    });
+    TweenMax.to(".background-2", {
+      delay: 1,
+      x: 0,
+      y: 0,
+      // ease: Power4.easeInOut,
     });
     TweenMax.to(".select-option", {
       delay: 0.4,
@@ -91,10 +154,11 @@ const Navigation = () => {
       <div class="background-2">
         <div class="list-menu-option">
           <ul class="option-list">
-            <li>profile</li>
+            {showNavigation(menu)}
+            {/* <li>profile</li>
             <li>skill</li>
             <li>education</li>
-            <li>interest</li>
+            <li>interest</li> */}
           </ul>
         </div>
       </div>

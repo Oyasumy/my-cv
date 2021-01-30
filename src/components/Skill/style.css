@@ -1,0 +1,137 @@
+.skill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 510px) {
+    .skill {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+    .skill {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .skill {
+        display: inline-block;
+    }
+}
+
+.skill .professional-skills,
+.skill .additional-skills {
+    /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; */
+    width: 50%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* height: -webkit-fit-content; */
+    /* height: -moz-fit-content; */
+    height: fit-content;
+    z-index: 2;
+    /* width: fit-content; */
+    margin: auto;
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+
+    .skill .professional-skills,
+    .skill .additional-skills {
+        width: 100%;
+    }
+    #myChart{
+        width: 400px;
+    }
+}
+
+@media (max-width: 510px) {
+
+    .skill .professional-skills,
+    .skill .additional-skills {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    .skill .professional-skills,
+    .skill .additional-skills {
+        width: 100%;
+    }
+}
+
+.skill .background-svg #skill-svg {
+    position: absolute;
+}
+
+.glass-morphism {
+    /* display: inline-block; */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2em;
+    border-radius: 3em;
+    position: relative;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    /* top: 1em; */
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .glass-morphism {
+        padding: 1.5em;
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+    .glass-morphism {
+        padding: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 510px) {
+    .glass-morphism {
+        padding: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.glass-morphism p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+    .glass-morphism p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 510px) {
+    .glass-morphism p {
+        font-size: 12px;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */
