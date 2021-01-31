@@ -7,7 +7,13 @@ const Loading = () => {
   const initAnimated = useCallback(() => {
     TweenMax.to(".loading-screen", 4, {
       delay: 6.6,
-      top: "-110%",
+      top: "-120%",
+      ease: Expo.easeInOut,
+    });
+
+    TweenMax.to(".loading-screen", 4, {
+      delay: 8,
+      zIndex:-1,
       ease: Expo.easeInOut,
     });
     TweenMax.to(".ringOne", 4, {
