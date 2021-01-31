@@ -4,8 +4,6 @@ import React from "react";
 const Menu = () => {
   const openNavigation = () => {
 
-   
-
     // Set animation for button menu
     TweenMax.to(".menu",{
       x:"3em",
