@@ -8,7 +8,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   background-color: #D8DBE2;
 }
 
@@ -70,6 +70,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 10;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -81,7 +82,7 @@ body {
 
 @media (max-width: 510px) {
   .home-body .language-option {
-    margin-top: -.5em;
+    margin-top: -2.5em;
   }
 }
 

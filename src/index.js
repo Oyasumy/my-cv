@@ -4,6 +4,8 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Main from './main';
+// import 'rsuite/dist/styles/rsuite-default.css';
+// import 'rsuite/lib/styles/index.less';
 
 ReactDOM.render(
   <React.StrictMode>

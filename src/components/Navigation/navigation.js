@@ -66,6 +66,7 @@ const Navigation = () => {
     // Reset animation for button menu
     TweenMax.to(".menu", {
       x: 0,
+      display:"block"
     });
 
     // Set animation

@@ -9,6 +9,11 @@ const Menu = () => {
       x:"3em",
       ease:Power4.easeInOut
     })
+    TweenMax.to(".menu",{
+      delay:.3,
+      display:"none",
+      ease:Power4.easeInOut
+    })
 
     // Set animation for parent
     TweenMax.to(".select-option", {

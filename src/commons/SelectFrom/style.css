@@ -1,0 +1,116 @@
+
+#app-cover #select-box {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+
+#app-cover #select-box #select-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  padding: .5em;
+}
+
+#app-cover #select-box #select-button #selected-value {
+  padding-left: 10px;
+}
+
+#app-cover #select-box #select-button #chevrons {
+  padding-right: 10px;
+}
+
+#app-cover #select-box #select-button #chevrons i {
+  font-size: 12px;
+}
+
+#app-cover #select-options {
+  position: relative;
+  width: 216px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+#app-cover #select-options .option-cus {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app-cover #select-options .option-cus i {
+  height: 16px;
+  color: whitesmoke;
+  padding-left: 1em;
+}
+
+#app-cover #select-options .option-cus span {
+  cursor: pointer;
+  color: whitesmoke;
+  padding-left: 1em;
+}
+
+#app-cover #select-options .o1::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  display: inline-block;
+  z-index: -1;
+  right: -3em;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#app-cover #select-options .o1:hover:before {
+  -webkit-transform: translateX(-3em);
+          transform: translateX(-3em);
+}
+
+#app-cover #select-options .o2::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  display: inline-block;
+  z-index: -1;
+  right: -3em;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#app-cover #select-options .o2:hover:before {
+  -webkit-transform: translateX(-3em);
+          transform: translateX(-3em);
+}
+
+@media (max-width: 510px) {
+    #app-cover{
+        width: 110px;
+        margin-right: 10px;
+    }
+    #select-button{
+        justify-content: flex-start !important;
+    }
+    #selected-value{
+        padding-right: 10px;
+    }
+
+  }
+/*# sourceMappingURL=main.css.map */
