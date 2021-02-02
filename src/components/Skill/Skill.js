@@ -1,11 +1,16 @@
 import { Back, TweenLite } from "gsap";
 import React, { useCallback, useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators, compose } from "redux";
 import Delayed from "../../commons/DelayLoadComponent";
 import Donut from "../Chart/Donut";
 import Radar from "../Chart/Radar";
 import "./style.css";
 
-const Skill = () => {
+const Skill = (props) => {
+
+  const {dataLanguage}=props;
+
   const [delayShow, setDelayShow] = useState(false);
   const initAnimated = useCallback(() => {
     TweenLite.from("#skill-svg-1", 2, {
@@ -75,17 +80,17 @@ const Skill = () => {
       </div>
       <div class="professional-skills">
         <div class="glass-morphism">
-          <p>professional skills</p>
+          <p>{dataLanguage.skill.professionalSkills}</p>
           <Delayed waitBeforeShow={2000}>
-            <Radar />
+            <Radar dataLanguage={dataLanguage}/>
           </Delayed>
         </div>
       </div>
       <div class="additional-skills">
         <div class="glass-morphism">
-          <p>addition skills</p>
+          <p>{dataLanguage.skill.additionSkills.title}</p>
           <Delayed waitBeforeShow={2000}>
-            <Donut />
+            <Donut dataLanguage={dataLanguage} />
           </Delayed>
         </div>
       </div>
@@ -93,4 +98,11 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+const mapStateToProps = (state) => ({
+  dataLanguage:state.stateLanguage.language
+});
+
+
+const withConnect = connect(mapStateToProps, null);
+
+export default compose(withConnect)(Skill);

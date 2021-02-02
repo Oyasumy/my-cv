@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import Chart from "chart.js"
-const Donut = () => {
+const Donut = ({dataLanguage}) => {
   useEffect(() => {
     var ctx2 = document.getElementById("pieChat").getContext("2d");
 
+    const {english,teamWork,creativity,Studious}=dataLanguage.skill.additionSkills.detail;
     var myPieChart = new Chart(ctx2, {
       type: "polarArea",
       data: {
-        labels: ["English", "Teamwork", "Creativity", "eager to learn"],
+        labels: [english, teamWork,creativity,Studious],
         datasets: [
           {
             maxBarThickness: 100,

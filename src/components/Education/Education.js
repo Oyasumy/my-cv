@@ -1,9 +1,11 @@
 import React from 'react'
+import  TimeLine  from '../TimeLine/TimeLine'
 
 const Education = () => {
     return (
         <div>
-            Education
+            {/* Education */}
+            <TimeLine/>
         </div>
     )
 }

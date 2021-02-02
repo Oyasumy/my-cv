@@ -1,0 +1,171 @@
+
+
+.interest {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.interest .contain-inter {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  place-items: center;
+  top: 20%;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .interest .contain-inter {
+    -ms-grid-columns: auto auto auto !important;
+        grid-template-columns: auto auto auto !important;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .interest .contain-inter {
+    -ms-grid-columns: auto auto auto !important;
+        grid-template-columns: auto auto auto !important;
+  }
+}
+
+@media (max-width: 510px) {
+  .interest .contain-inter {
+    -ms-grid-columns: auto auto auto !important;
+        grid-template-columns: auto auto auto !important;
+  }
+}
+
+.interest .contain-inter .glass-morphism-inter {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 3em;
+  position: relative;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+          box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .interest .contain-inter .glass-morphism-inter {
+    padding: 1.5em;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .interest .contain-inter .glass-morphism-inter {
+    padding: 1.2em;
+  }
+}
+
+@media (max-width: 510px) {
+  .interest .contain-inter .glass-morphism-inter {
+    padding: 1.2em;
+  }
+}
+
+.interest .contain-inter .glass-morphism-inter p {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .interest .contain-inter .glass-morphism-inter p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 510px) {
+  .interest .contain-inter .glass-morphism-inter p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .interest .contain-inter .glass-morphism-inter:nth-child(4) {
+    top: 4em;
+    grid-column: span 3;
+    place-items: center;
+    margin-left: 7%;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .interest .contain-inter .glass-morphism-inter:nth-child(4) {
+    top: 4em;
+    grid-column: span 3;
+    place-items: center;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 510px) {
+  .interest .contain-inter .glass-morphism-inter:nth-child(4) {
+    grid-column: span 3;
+    top: 4em;
+    place-items: center;
+    margin-left: 9%;
+  }
+}
+
+.interest .contain-inter .background-svg-inter #svg-1-in {
+  position: absolute;
+  top: -45%;
+  left: 5%;
+}
+
+.interest .contain-inter .background-svg-inter #svg-2-in {
+  position: absolute;
+  top: 100%;
+  right: 13%;
+}
+
+@media (min-width: 1024px -1px) {
+  .interest .contain-inter .background-svg-inter #svg-2-in {
+    margin-top: 15em !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .interest .contain-inter .background-svg-inter #svg-2-in {
+    margin-top: 15em !important;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 767px) {
+  .interest .contain-inter .background-svg-inter #svg-2-in {
+    margin-top: 10em !important;
+  }
+}
+
+.interest .contain-inter .background-svg-inter #svg-3-in {
+  position: absolute;
+  top: 64%;
+  right: 64%;
+}
+
+.interest .contain-inter .background-svg-inter #svg-4-in {
+  position: absolute;
+  top: 25em;
+  left: 9em;
+}
+
+.interest .contain-inter .background-svg-inter #svg-5-in {
+  position: absolute;
+  top: -88%;
+  right: 5%;
+}
+/*# sourceMappingURL=main.css.map */

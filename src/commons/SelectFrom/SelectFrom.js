@@ -1,10 +1,16 @@
 import { Back, TweenMax } from "gsap";
 import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators, compose } from "redux";
+// import { setDataLanguage } from "../../constants/dataLanguge";
+import * as actionLang from "../../actions/firstLoad";
 import "./style.css";
-const SelectFrom = () => {
+const SelectFrom = (props) => {
+  const { actionLang,dataLanguage } = props;
+
   const [showSelect, setShowSelect] = useState(false);
 
-  const [defaultLanguage, setDefaultLanguage] = useState("English");
+  const [defaultLanguage, setDefaultLanguage] = useState(dataLanguage.type==="el"?"English":"Tiếng Việt");
   useEffect(() => {
     // console.log("ok");
     TweenMax.to("#select-options", {
@@ -13,9 +19,16 @@ const SelectFrom = () => {
       // display:'none',
     });
   }, []);
+
+  useEffect(() => {
+    if(dataLanguage.type==="el"){
+      setDefaultLanguage("English");
+    }else{
+      setDefaultLanguage("Tiếng Việt");
+    }
+  }, [dataLanguage])
   const onSetDropdown = () => {
     if (!showSelect) {
-      console.log("t1");
       TweenMax.to("#select-options", 1, {
         top: 0,
         opacity: 1,
@@ -23,8 +36,6 @@ const SelectFrom = () => {
         ease: Back.easeInOut.config(1.7),
       });
     } else {
-      console.log("t2");
-
       TweenMax.to("#select-options", 1, {
         top: "-1em",
         opacity: 0,
@@ -32,7 +43,6 @@ const SelectFrom = () => {
       });
     }
     setShowSelect((c) => !c);
-    console.log("show", showSelect);
   };
   return (
     <>
@@ -50,16 +60,20 @@ const SelectFrom = () => {
             <div
               class="option-cus o1"
               onClick={() => {
-                setDefaultLanguage("Tieng Viet");
+                // setDefaultLanguage("Tieng Viet");
+                // setDataLanguage("TV");
+                actionLang.handleSetChangeLanguage("tv");
                 onSetDropdown();
               }}>
               <i class="fab fa-codepen"></i>
-              <span class="opt-val">Tieng Viet</span>
+              <span class="opt-val">Tiếng Việt</span>
             </div>
             <div
               class="option-cus o2"
               onClick={() => {
-                setDefaultLanguage("English");
+                // setDefaultLanguage("English");
+                // setDataLanguage("English");
+                actionLang.handleSetChangeLanguage("el");
                 onSetDropdown();
               }}>
               <i class="fab fa-dribbble"></i>
@@ -74,4 +88,13 @@ const SelectFrom = () => {
   );
 };
 
-export default SelectFrom;
+const mapStateToProps = (state) => ({
+  dataLanguage: state.stateLanguage.language,
+});
+const mapDispatchToProps = (dispatch) => ({
+  actionLang: bindActionCreators({ ...actionLang }, dispatch),
+});
+
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+
+export default compose(withConnect)(SelectFrom);

@@ -1,1 +1,3 @@
-export const SET_FIRST_LOAD = 'SET_FIRST_LOAD'
+export const SET_FIRST_LOAD = 'SET_FIRST_LOAD';
+
+export const SET_CHANGE_LANGUAGE = 'SET_CHANGE_LANGUAGE';

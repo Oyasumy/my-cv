@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Main from './main';
 // import 'rsuite/dist/styles/rsuite-default.css';
 // import 'rsuite/lib/styles/index.less';
+import "react-vertical-timeline-component/style.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
