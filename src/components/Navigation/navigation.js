@@ -66,7 +66,7 @@ const Navigation = () => {
     // Reset animation for button menu
     TweenMax.to(".menu", {
       x: 0,
-      display:"block"
+      display: "block",
     });
 
     // Set animation
@@ -82,7 +82,7 @@ const Navigation = () => {
       y: "-1em",
       ease: Power4.easeInOut,
     });
-    
+
     TweenMax.to(".background-1", {
       delay: 1,
       x: 0,
@@ -140,8 +140,10 @@ const Navigation = () => {
         <div class="content">
           {/* <!-- contact --> */}
           <div class="contact">
-            <p>
-              <a href="#">contact</a>
+            <p onClick={() => onCloseNavigation()}>
+              <a as={Link} to="/contact">
+                <Link to="/contact">contact</Link>
+              </a>
             </p>
           </div>
           {/* <!-- feedback --> */}
