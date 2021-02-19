@@ -49,7 +49,7 @@ const Skill = (props) => {
           </g>
           <defs>
             <filter id="filter0_d" x="-55.8757" y="-80" width="410.451" height="319.658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
               <feOffset dy="4" />
               <feGaussianBlur stdDeviation="2" />
@@ -58,7 +58,7 @@ const Skill = (props) => {
               <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
             </filter>
             <filter id="filter1_d" x="-55.8757" y="16.1003" width="410.451" height="319.658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
               <feOffset dy="4" />
               <feGaussianBlur stdDeviation="2" />
@@ -67,7 +67,7 @@ const Skill = (props) => {
               <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
             </filter>
             <filter id="filter2_d" x="-72" y="111.556" width="410.451" height="319.658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
               <feOffset dy="4" />
               <feGaussianBlur stdDeviation="2" />

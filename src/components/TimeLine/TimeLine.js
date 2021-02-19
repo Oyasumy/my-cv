@@ -36,7 +36,7 @@ const TimeLine = (props) => {
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<i class="fab fa-reacteurope icon-timeline"></i>}
+          icon={<i className="fab fa-reacteurope icon-timeline"></i>}
         >
          <h3 className="vertical-timeline-element-title">{fifth.h3}</h3>
           <h4 className="vertical-timeline-element-subtitle">{fifth.h4}</h4>
@@ -60,7 +60,7 @@ const TimeLine = (props) => {
           contentStyle={{ background: "#30475e", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #30475e" }}
           iconStyle={{ background: "#30475e", color: "#fff" }}
-          icon={<i class="fab fa-node icon-timeline"></i>}
+          icon={<i className="fab fa-node icon-timeline"></i>}
         >
           <h3 className="vertical-timeline-element-title">{fourth.h3}</h3>
           <h4 className="vertical-timeline-element-subtitle">{fourth.h4}</h4>
@@ -89,7 +89,7 @@ const TimeLine = (props) => {
           contentStyle={{ background: "#f05454", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f05454" }}
           iconStyle={{ background: "#f05454", color: "#fff" }}
-          icon={<i class="fab fa-react icon-timeline"></i>}
+          icon={<i className="fab fa-react icon-timeline"></i>}
         >
           <h3 className="vertical-timeline-element-title">{third.h3}</h3>
           <h4 className="vertical-timeline-element-subtitle">{third.h4}</h4>
@@ -101,7 +101,7 @@ const TimeLine = (props) => {
           contentStyle={{ background: "#e8e8e8", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #e8e8e8" }}
           iconStyle={{ background: "#e8e8e8", color: "#fff" }}
-          icon={<i class="fab fa-html5 icon-timeline"></i>}
+          icon={<i className="fab fa-html5 icon-timeline"></i>}
         >
          <h3 className="vertical-timeline-element-title">{second.h3}</h3>
           <h4 className="vertical-timeline-element-subtitle">{second.h4}</h4>
@@ -113,13 +113,13 @@ const TimeLine = (props) => {
           contentStyle={{ background: "#222831", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #222831" }}
           iconStyle={{ background: "#222831", color: "#fff" }}
-          icon={<i class="fas fa-synagogue icon-timeline"></i>}
+          icon={<i className="fas fa-synagogue icon-timeline"></i>}
         >
           <h3 className="vertical-timeline-element-title">{first.h3}</h3>
           <h4 className="vertical-timeline-element-subtitle">{first.h4}</h4>
           <p>{first.p}</p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement iconStyle={{ background: "#456268", color: "#fff" }} icon={<i class="fab fa-jedi-order icon-timeline"></i>} />
+        <VerticalTimelineElement iconStyle={{ background: "#456268", color: "#fff" }} icon={<i className="fab fa-jedi-order icon-timeline"></i>} />
       </VerticalTimeline>
     </div>
   );

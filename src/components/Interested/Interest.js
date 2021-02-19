@@ -62,35 +62,35 @@ const Interest = (props) => {
     }, 1*200);
   }, []);
   return (
-    <div class="interest" onMouseMove={(e) => changePositive(e)}>
-      <div class="contain-inter">
-        <div class="glass-morphism-inter vl tras-1">
-          <i class="fas fa-gamepad"></i>
+    <div className="interest" onMouseMove={(e) => changePositive(e)}>
+      <div className="contain-inter">
+        <div className="glass-morphism-inter vl tras-1">
+          <i className="fas fa-gamepad"></i>
           <p>{interest.first}</p>
         </div>
-        <div class="glass-morphism-inter vl tras-2">
-          <i class="far fa-sun"></i>
+        <div className="glass-morphism-inter vl tras-2">
+          <i className="far fa-sun"></i>
           <p>{interest.second}</p>
         </div>
-        <div class="glass-morphism-inter vl tras-3">
-          <i class="fas fa-biking"></i>
+        <div className="glass-morphism-inter vl tras-3">
+          <i className="fas fa-biking"></i>
           <p>{interest.third}</p>
         </div>
-        <div class="glass-morphism-inter vl tras-4">
-          <i class="fas fa-film"></i>
+        <div className="glass-morphism-inter vl tras-4">
+          <i className="fas fa-film"></i>
           <p>{interest.fourth}</p>
         </div>
-        <div class="background-svg-inter">
+        <div className="background-svg-inter">
           {/* <!-- icon 1 --> */}
-          <svg class="layer" id="svg-1-in" data-speech="-5" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="layer" id="svg-1-in" data-speech="-5" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M65 0C29.1019 0 0 29.1019 0 65C0 100.898 29.1019 130 65 130C100.898 130 130 100.898 130 65C130 29.1019 100.898 0 65 0ZM65 108.333C41.0692 108.333 21.6667 88.9308 21.6667 65C21.6667 41.0692 41.0692 21.6667 65 21.6667C88.9308 21.6667 108.333 41.0692 108.333 65C108.333 88.9308 88.9308 108.333 65 108.333Z"
               fill="#DD2E44"
             />
           </svg>
           {/* <!-- icon2 --> */}
-          <svg class="layer" id="svg-2-in" data-speech="3" width="166" height="166" viewBox="0 0 166 166" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
+          <svg className="layer" id="svg-2-in" data-speech="3" width="166" height="166" viewBox="0 0 166 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0)">
               <path
                 d="M53.6084 34.5281C53.0962 35.0608 52.6783 35.6767 52.3726 36.3495L52.3357 36.3126L0.617508 152.817L0.668231 152.868C-0.290881 154.726 1.31379 158.507 4.60151 161.799C7.88923 165.087 11.6703 166.692 13.5286 165.733L13.5747 165.779L130.079 114.056L130.042 114.014C130.72 113.692 131.343 113.3 131.864 112.774C139.066 105.572 127.386 82.2163 105.783 60.6086C84.1709 39.0009 60.8156 27.3256 53.6084 34.5281V34.5281Z"
                 fill="#DD2E44"
@@ -129,7 +129,7 @@ const Interest = (props) => {
             </defs>
           </svg>
           {/* <!-- icon 3 --> */}
-          <svg class="layer" id="svg-3-in" data-speech="-1" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="layer" id="svg-3-in" data-speech="-1" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M80.9261 80.9258C60.0311 101.821 24.9698 110.62 8.54606 96.4542C-5.62019 80.0333 3.17939 44.9692 24.0744 24.0741C44.9694 3.17915 80.0336 -5.62043 96.4544 8.54582C113.68 31.0858 101.821 60.0308 80.9261 80.9258V80.9258Z" fill="#3B88C3" />
             <path d="M103.898 24.6487C99.6423 40.3637 74.1157 78.47 33.2998 93.5783C29.8961 95.0367 30.1382 99.4087 35.7294 99.8958C37.7594 100.074 43.5257 100.053 50.584 99.645C61.5711 95.8796 72.424 89.4279 80.9261 80.9258C97.099 64.7529 107.844 43.7617 103.898 24.6487Z" fill="#CCD6DD" />
             <path
@@ -139,13 +139,13 @@ const Interest = (props) => {
           </svg>
           {/* <!-- icon 4 --> */}
 
-          <svg class="layer" id="svg-4-in" data-speech="2" width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="layer" id="svg-4-in" data-speech="2" width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M109.083 59.5L84.2915 109.083L35.204 29.9483L21.0232 59.5H9.9165L34.7082 9.91663L83.7957 89.0516L97.9765 59.5H109.083Z" fill="#24477C" />
           </svg>
 
           {/* <!-- icon 5 --> */}
-          <svg class="layer" id="svg-5-in" data-speech="-2" width="171" height="171" viewBox="0 0 171 171" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
+          <svg className="layer" id="svg-5-in" data-speech="-2" width="171" height="171" viewBox="0 0 171 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0)">
               <path
                 d="M106.86 131.8C105.944 132.227 104.868 132.166 104.015 131.615L8.90251 71.5626C7.98313 70.9873 7.45229 69.9439 7.52194 68.8631C7.55401 68.3296 7.72992 67.8148 8.03101 67.3732C8.33209 66.9316 8.74712 66.5798 9.23203 66.3551L119.451 14.9424C120.439 14.4816 121.594 14.5936 122.471 15.2438C123.344 15.8849 123.802 16.9621 123.652 18.0362L108.551 129.51C108.42 130.509 107.775 131.373 106.86 131.8Z"
                 fill="#DB4437"

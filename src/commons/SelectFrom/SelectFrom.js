@@ -48,36 +48,36 @@ const SelectFrom = (props) => {
     <>
       <form id="app-cover" style={{ position: "relative", top: "2.5em" }}>
         <div id="select-box">
-          <div id="select-button" class="brd" style={{ zIndex: 2 }}>
+          <div id="select-button" className="brd" style={{ zIndex: 2 }}>
             <div id="selected-value">
               <span>{defaultLanguage}</span>
             </div>
             <div id="chevrons" onClick={() => onSetDropdown()}>
-              <i class="fas fa-chevron-down"></i>
+              <i className="fas fa-chevron-down"></i>
             </div>
           </div>
           <div id="select-options" style={{ zIndex: 1 }}>
             <div
-              class="option-cus o1"
+              className="option-cus o1"
               onClick={() => {
                 // setDefaultLanguage("Tieng Viet");
                 // setDataLanguage("TV");
                 actionLang.handleSetChangeLanguage("tv");
                 onSetDropdown();
               }}>
-              <i class="fab fa-codepen"></i>
-              <span class="opt-val">Tiếng Việt</span>
+              <i className="fab fa-codepen"></i>
+              <span className="opt-val">Tiếng Việt</span>
             </div>
             <div
-              class="option-cus o2"
+              className="option-cus o2"
               onClick={() => {
                 // setDefaultLanguage("English");
                 // setDataLanguage("English");
                 actionLang.handleSetChangeLanguage("el");
                 onSetDropdown();
               }}>
-              <i class="fab fa-dribbble"></i>
-              <span class="opt-val">English</span>
+              <i className="fab fa-dribbble"></i>
+              <span className="opt-val">English</span>
             </div>
 
             <div id="option-cus-bg"></div>

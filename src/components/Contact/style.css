@@ -98,6 +98,13 @@
   }
 }
 
+@media (max-width: 510px) {
+  .container-contact .glass-morphism p {
+    font-size: 8px;
+   
+  }
+}
+
 .container-contact .glass-morphism p {
   display: -webkit-box;
   display: -ms-flexbox;
