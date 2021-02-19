@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
 import anime from "animejs";
 
 import dataContact from "../../constants/dataContact";
 
 const Contact = () => {
-
- const [unmountComp, setUnmountComp] = useState(false)
+  // const [unmountComp, setUnmountComp] = useState(false);
+  const st = useRef(false);
 
   useEffect(() => {
     const container = document.querySelector(".container-contact");
@@ -22,14 +22,15 @@ const Contact = () => {
 
   useEffect(
     () => () => {
+      // setUnmountComp(true);
+      st.current = true;
       console.log("unmount");
-      setUnmountComp(true);
     },
     []
   );
 
   const animatedBlock = () => {
-    console.log("ok ani");
+    // console.log("ok ani", unmountComp, st);
     anime({
       targets: ".block",
       translateX: function () {
@@ -44,7 +45,7 @@ const Contact = () => {
       easing: "linear",
       duration: 3000,
       delay: anime.stagger(5),
-      complete: !unmountComp? null : animatedBlock,
+      complete: st.current ? null : animatedBlock,
     });
   };
 
@@ -58,7 +59,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container-contact" style={{overflow:'hidden'}}>
+    <div className="container-contact" style={{ overflow: "hidden" }}>
       <div className="glass-morphism">
         <h3>Contact me</h3>
         <p id="gmail-c">
