@@ -13,6 +13,7 @@ import route from "./router";
 import Navigation from "./components/Navigation/navigation";
 import Loading from "./components/loading";
 import Menu from "./components/menu";
+import { ToastProvider } from "react-toast-notifications";
 
 // create store
 const store = configStore();
@@ -22,12 +23,14 @@ const Main = () => {
     <Provider store={store}>
       <Loading />
       <Menu />
-      <Router>
-        {/* <App /> */}
-        <Navigation />
+      <ToastProvider>
+        <Router>
+          {/* <App /> */}
+          <Navigation />
 
-        <Switch>{showRoute(route)}</Switch>
-      </Router>
+          <Switch>{showRoute(route)}</Switch>
+        </Router>
+      </ToastProvider>
     </Provider>
   );
 };
