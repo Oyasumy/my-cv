@@ -132,7 +132,7 @@
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: white;
+    color: darkslategray;
 }
 
 @media (min-width: 511px) and (max-width: 767px) {

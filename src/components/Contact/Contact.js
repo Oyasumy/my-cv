@@ -20,7 +20,7 @@ const Contact = () => {
     const container = document.querySelector(".container-contact");
 
     // Create blocks and append to container
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 50; i++) {
       const blocks = document.createElement("div");
 
       blocks.classList.toggle("block");

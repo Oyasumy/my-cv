@@ -149,9 +149,9 @@ const Navigation = () => {
           {/* <!-- feedback --> */}
           <div className="feedback">
             <p>
-            <Link  to="/feedback" link="true">feedback</Link>
+              <a href={process.env.PUBLIC_URL + "/mycv.pdf" }>DOWN CV</a>
+            {/* <Link  to="/feedback" link="true">feedback</Link> */}
 
-              {/* <a href="#">feedback</a> */}
             </p>
           </div>
         </div>
