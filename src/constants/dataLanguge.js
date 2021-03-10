@@ -42,13 +42,13 @@ export const dataE = {
       color2:"#252525"
     },
     {
-      h3: "My first project was written by React and Node JS",
+      h3: "My first project was written by using React and Node JS",
       h4: "",
       p: "",
       time: "June 2020",
       color1:"#11698e",
       color2:"#252525",
-      link:"https://oyasumy.github.io/react-demo-bookstore/"
+      link:"https://github.com/Oyasumy/react-demo-bookstore"
     },
     {
       h3: "Learning more about React Native",
@@ -57,7 +57,7 @@ export const dataE = {
       time: "September 2020",
       color1:"#f4c983",
       color2:"#28527a",
-      link:"https://oyasumy.github.io/react-demo-bookstore/"
+      link:"https://github.com/Oyasumy/HUFLIT-mobile-app/tree/main"
     },
   ],
   interest: {
@@ -117,7 +117,7 @@ export const dataV = {
       time: "Tháng 6 - 2020",
       color1:"#11698e",
       color2:"#252525",
-      link:"https://oyasumy.github.io/react-demo-bookstore/"
+      link:"https://github.com/Oyasumy/react-demo-bookstore"
     },
     {
       h3: "Học thêm về React Native",
@@ -126,7 +126,7 @@ export const dataV = {
       time: "Tháng 9 2020",
       color1:"#f4c983",
       color2:"#28527a",
-      link:"https://oyasumy.github.io/react-demo-bookstore/"
+      link:"https://github.com/Oyasumy/HUFLIT-mobile-app/tree/main"
     },
   ],
   interest: {
