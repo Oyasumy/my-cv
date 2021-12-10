@@ -21,7 +21,7 @@ export const dataE = {
       h3: "Start studying at HUFLIT University",
       h4: "Majoring in Information Technology",
       p: "Student",
-      time: "September 2017",
+      time: "September 2016",
       color1:"#ec4646",
       color2:"#252525"
     },
@@ -29,7 +29,7 @@ export const dataE = {
       h3: "Start to learn HTML and CSS",
       h4: "",
       p: "",
-      time: "August 2018",
+      time: "August 2017",
       color1:"#1687a7",
       color2:"#252525"
     },
@@ -37,7 +37,7 @@ export const dataE = {
       h3: "Approaching React JS",
       h4: "",
       p: "By myself",
-      time: "April 2019",
+      time: "April 2018",
       color1:"#314e52",
       color2:"#252525"
     },
@@ -45,7 +45,7 @@ export const dataE = {
       h3: "My first project was written by using React and Node JS",
       h4: "",
       p: "",
-      time: "June 2020",
+      time: "June 2019",
       color1:"#11698e",
       color2:"#252525",
       link:"https://github.com/Oyasumy/react-demo-bookstore"
@@ -54,7 +54,7 @@ export const dataE = {
       h3: "Learning more about React Native",
       h4: "",
       p: "",
-      time: "September 2020",
+      time: "September 2019",
       color1:"#f4c983",
       color2:"#28527a",
       link:"https://github.com/Oyasumy/HUFLIT-mobile-app/tree/main"
@@ -90,7 +90,7 @@ export const dataV = {
       h3: "Bắt đầu học tập tại Đại Học HUFLIT ",
       h4: "Chuyên ngành chính Công Nghệ Thông Tin",
       p: "Sinh Viên",
-      time: "Tháng 9 - 2017",
+      time: "Tháng 9 - 2016",
       color1:"#ec4646",
       color2:"#252525"
     },
@@ -98,7 +98,7 @@ export const dataV = {
       h3: "Bắt đầu học về HTML và CSS",
       h4: "",
       p: "",
-      time: "Tháng 8 - 2018",
+      time: "Tháng 8 - 2017",
       color1:"#1687a7",
       color2:"#252525"
     },
@@ -106,7 +106,7 @@ export const dataV = {
       h3: "Tiếp cận React JS",
       h4: "",
       p: "Tự Học",
-      time: "Tháng 4 - 2019",
+      time: "Tháng 4 - 2018",
       color1:"#314e52",
       color2:"#252525"
     },
@@ -114,7 +114,7 @@ export const dataV = {
       h3: "Dự án đầu tiên sử dụng React và Node JS",
       h4: "",
       p: "",
-      time: "Tháng 6 - 2020",
+      time: "Tháng 6 - 2019",
       color1:"#11698e",
       color2:"#252525",
       link:"https://github.com/Oyasumy/react-demo-bookstore"
@@ -123,7 +123,7 @@ export const dataV = {
       h3: "Học thêm về React Native",
       h4: "",
       p: "",
-      time: "Tháng 9 2020",
+      time: "Tháng 9 2019",
       color1:"#f4c983",
       color2:"#28527a",
       link:"https://github.com/Oyasumy/HUFLIT-mobile-app/tree/main"
